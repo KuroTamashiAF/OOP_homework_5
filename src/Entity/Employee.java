@@ -1,5 +1,6 @@
 package Entity;
 
+import Entity.Enums.AccessesLevel;
 import Entity.Enums.Position;
 
 import java.util.UUID;
@@ -10,6 +11,7 @@ public class Employee {
     private int salary;
     private Position position;
 
+    private AccessesLevel accessesLevel;
 
     public Employee(String name,int salary, Position position) {
         this.name = name;
