@@ -21,7 +21,20 @@ public class Employee {
         this.accessesLevel = accessesLevel;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public int getSalary() {
+        return salary;
+    }
 
+    public Position getPosition() {
+        return position;
+    }
+
+    public AccessesLevel getAccessesLevel() {
+        return accessesLevel;
+    }
 }
 
