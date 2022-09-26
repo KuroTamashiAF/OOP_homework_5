@@ -1,7 +1,17 @@
 package Service;
 
-public interface AccessLevelHeight extends AccessLevelMedium{
-    void goToDirector();
+import Service.Inplementation.AccessLevelInt;
+
+public class AccessLevelHeight extends AccessLevelMedium implements AccessLevelInt {
+    
+    
+    
+    public void work(){
+         goToDirector();
+    }
+
+    private void goToDirector() {
+    }
 
 
 }

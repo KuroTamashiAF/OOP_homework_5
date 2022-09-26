@@ -1,6 +1,16 @@
 package Service;
 
-public interface AccessLevelMedium extends AccessLevelLow{
-    void throwAwayDocuments();
+import Service.Inplementation.AccessLevelInt;
+
+public class AccessLevelMedium extends AccessLevelLow implements AccessLevelInt {
+
+
+    public void work(){
+         throwAwayDocuments();
+    }
+
+    private void throwAwayDocuments() {
+    }
+
 
 }

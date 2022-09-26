@@ -13,11 +13,12 @@ public class Employee {
 
     private AccessesLevel accessesLevel;
 
-    public Employee(String name,int salary, Position position) {
+    public Employee(String name,int salary, Position position,AccessesLevel accessesLevel ) {
         this.name = name;
         this.id = UUID.randomUUID();
         this.salary = salary;
         this.position = position;
+        this.accessesLevel = accessesLevel;
     }
 
 

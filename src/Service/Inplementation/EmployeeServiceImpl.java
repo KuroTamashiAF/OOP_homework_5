@@ -5,4 +5,7 @@ import Repository.EmployeeRepository;
 public class EmployeeServiceImpl {
     private EmployeeRepository employeeRepository;
 
+    public void work(){
+
+    }
 }
