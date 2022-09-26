@@ -1,11 +1,17 @@
 package Service.Inplementation;
 
-import Service.AccessLevelInt;
+import Service.EmployeeServiceimpl;
 
-public class AccessLevelLow implements AccessLevelInt {
+public class AccessLevelLow implements EmployeeServiceimpl {
 
     public void work(){
         workWithDocuments();
+    }
+
+    @Override
+    public void goToHome() {
+        System.out.println("Go to home in car");
+
     }
 
     protected void workWithDocuments() {

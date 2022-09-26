@@ -1,12 +1,18 @@
 package Service.Inplementation;
 
-import Service.AccessLevelInt;
+import Service.EmployeeServiceimpl;
 
-public class AccessLevelMedium extends AccessLevelLow implements AccessLevelInt {
+public class AccessLevelMedium extends AccessLevelLow implements EmployeeServiceimpl {
 
 
     public void work(){
          throwAwayDocuments();
+    }
+
+    @Override
+    public void goToHome() {
+        System.out.println("Go to home in underground");
+
     }
 
     protected void throwAwayDocuments() {

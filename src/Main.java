@@ -1,9 +1,7 @@
 import Entity.Employee;
 import Entity.Enums.AccessesLevel;
 import Entity.Enums.Position;
-import Repository.EmployeeRepository;
-import Service.Inplementation.AccessLevelHeight;
-import Service.Inplementation.EmployeeServiceImpl;
+import Service.Inplementation.EmployeeService;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,10 +10,17 @@ public class Main {
         Employee employee3 = new Employee("Hope", 300000, Position.ENGINEER, AccessesLevel.LOW);
 
 
-        EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
-        employeeService.work(employee1);
-        employeeService.work(employee2);
-        employeeService.work(employee3);
+
+
+
+
+
+
+        EmployeeService employeeService = new EmployeeService();
+        employeeService.goToHome(employee1);
+        employeeService.goToHome(employee2);
+        employeeService.goToHome(employee3);
+
 
 
 
