@@ -1,4 +1,4 @@
-package Service.Inplementation;
+package Service;
 
 public interface AccessLevelInt {
     void work();
