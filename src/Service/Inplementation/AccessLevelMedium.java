@@ -2,7 +2,7 @@ package Service;
 
 import Service.Inplementation.AccessLevelInt;
 
-public class AccessLevelMedium extends AccessLevelLow implements AccessLevelInt {
+public class AccessLevelMedium extends AccessLevelInt.AccessLevelLow implements AccessLevelInt {
 
 
     public void work(){
