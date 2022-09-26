@@ -8,7 +8,7 @@ public class AccessLevelLow implements AccessLevelInt {
         workWithDocuments();
     }
 
-    private void workWithDocuments() {
+    protected void workWithDocuments() {
     }
 
 }

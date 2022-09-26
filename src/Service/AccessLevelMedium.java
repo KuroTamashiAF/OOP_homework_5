@@ -9,7 +9,7 @@ public class AccessLevelMedium extends AccessLevelLow implements AccessLevelInt 
          throwAwayDocuments();
     }
 
-    private void throwAwayDocuments() {
+    protected void throwAwayDocuments() {
     }
 
 
