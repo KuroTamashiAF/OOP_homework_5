@@ -9,6 +9,7 @@ public class AccessLevelLow implements AccessLevelInt {
     }
 
     protected void workWithDocuments() {
+        System.out.println("I work with documents");
     }
 
 }

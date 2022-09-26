@@ -10,7 +10,7 @@ public class AccessLevelMedium extends AccessLevelLow implements AccessLevelInt 
     }
 
     protected void throwAwayDocuments() {
+        System.out.println("I throwing it away documents");
+    }
     }
 
-
-}

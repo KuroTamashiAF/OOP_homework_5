@@ -11,6 +11,7 @@ public class AccessLevelHeight extends AccessLevelMedium implements AccessLevelI
     }
 
     protected void goToDirector() {
+        System.out.println("I go to director with this document");
     }
 
 

@@ -9,17 +9,19 @@ public class EmployeeServiceImpl {
     private EmployeeRepository employeeRepository;
 
     public void work(Employee employee) {
+        AccessLevelInt accessLevel =null;
         if (employee.getAccessesLevel() == AccessesLevel.LOW) {
-            AccessLevelInt accessLevelInt = new AccessLevelLow();
-
+            accessLevel = new AccessLevelLow();
         }
-        if (employee.getAccessesLevel() == AccessesLevel.MEDIUM) {
-            AccessLevelInt accessLevelInt = new AccessLevelMedium();
-
+        else if (employee.getAccessesLevel() == AccessesLevel.MEDIUM) {
+            accessLevel = new AccessLevelMedium();
         }
-        if (employee.getAccessesLevel() == AccessesLevel.HIGH) {
-            AccessLevelInt accessLevelInt = new AccessLevelHeight();
-
+        else if (employee.getAccessesLevel() == AccessesLevel.HIGH) {
+            accessLevel = new AccessLevelHeight();
         }
+        if (accessLevel != null){
+            accessLevel.work();
+        }
+
     }
 }

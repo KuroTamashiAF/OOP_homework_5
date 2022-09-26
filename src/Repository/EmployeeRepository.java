@@ -9,5 +9,7 @@ public class EmployeeRepository {
 List<Employee> employeeList = new ArrayList<>();
 
 
-
+    public List<Employee> getEmployeeList() {
+        return employeeList;
+    }
 }
